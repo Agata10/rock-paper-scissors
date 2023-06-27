@@ -1,5 +1,29 @@
-# rock-paper-scissors
+# My First Game: <br />Rock Paper Scissors
 
-My first game using HTML/CSS/JavaScript.
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies](#technologies)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
 
-In this game I'll create my first game and use GUI that will be easily readable for user.
+
+## General information
+It's my first game using JavaScript. Game is one of the task from [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) .
+
+## Technologies
+* CSS3
+* HTML5
+* JavaScript
+
+## Screenshots
+
+## Setup
+
+1. Fork repository
+2. Clone reposiory
+   `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+
+## Usage
+
+This is traditional game rock-paper-scissors. There are 5 rounds, each round player is chosing from: rock/paper/scissors against the computer. The rules of the game: Rock beats scissors, paper beats rock, scissors beats paper. After 5 rounds the winner is announced.
