@@ -8,7 +8,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #DDC7AF;
+    background-color: #e8ded1;
     color: #f3f6f4;
     font-family: Papyrus, fantasy;
 }
@@ -18,25 +18,30 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 h2.header {
     font-weight: 500;
     font-size: 48px;
+    border: 2px solid #a0816c;
+    border-radius: 12px;
+    background-color: #a0816c;
+    padding: 24px;
 }
 
 h4.header {
     margin-top: 16px;
     font-size: 24px;
     position: relative;
+    color: #a0816c;
 }
 
 h4.header:after {
     content: "";
     position: absolute;
     bottom: -4px;
-    left: 0;
+    left: -5px;
     height: 10px;
     width: 105%;
     border: solid 2px #f3f6f4;
@@ -49,7 +54,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    background-color: #ead4be;
+    background-color: #a0816c;
     padding: 12px;
 }
 
@@ -70,7 +75,8 @@ footer {
     justify-content: space-around;
     width: 200px;
     height: 250px;
-    border: 3px solid #ead4be;
+    border: 3px solid #a0816c;
+    background-color: #a0816c;
     border-radius: 8px;
     padding-top: 8px;
 }
@@ -89,8 +95,10 @@ div.computerScore {
     width: 180px;
     height: 180px;
     border-radius: 8px;
-    background-color: #ead4be;
+    background-color: #e8ded1;
     margin: 5px auto;
+    color: #a0816c;
+    font-size: 60px;
 }
 
 .choice {
@@ -105,6 +113,7 @@ div.computerScore {
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
+    color: #a0816c;
 }
 
 .buttons {
@@ -123,11 +132,11 @@ img{
 #rock,
 #paper,
 #scissors {
-    border: 4px solid #ead4be;
+    border: 4px solid #a0816c;
     border-radius: 50% 50% 50% 50%;
     width: 100px;
     height: 100px;
-    background-color: #DDC7AF;
+    background-color: #e8ded1;
 }
 
 .result {
@@ -138,14 +147,28 @@ img{
     align-items: center;
     margin: 32px auto;
     font-size: 16px;
+    color: #a0816c;
 }
 
 .result button{
-    border: 2px solid #ead4be;
+    border: 2px solid #a0816c;
     border-radius: 8px;
     padding: 8px;
     font-family: Papyrus, fantasy;
     font-size: 18px;
+    visibility: hidden;
 }
 
-
+/* Responsive Design */
+@media screen and (max-width: 612px) {  
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }}
