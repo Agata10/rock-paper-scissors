@@ -87,8 +87,8 @@ span {
     padding-left: 12px;
 }
 
-div.playerScore,
-div.computerScore {
+div#playerScore,
+div#computerScore {
     display: flex;
     justify-content: center;
     align-items: center;
