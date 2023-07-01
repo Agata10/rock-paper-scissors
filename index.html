@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
-    <script src="javascript.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
+    <header>
+        <h2 class="header">Rock-Paper-Scissors</h2>
+        <h4 class="header">5 rounds</h4>
+    </header>
+    <div class="scores">
+        <div class="player">
+            <p class="playerScore">Player</p>
+            <div id="playerScore">?</div>
+            <p class="playerScore">Score:<span class="playerScore">0</span></p>
+        </div>
+        <div class="computer">
+            <p class="computerScore">Computer</p>
+            <div id="computerScore">?</div>
+            <p class="computerScore">Score:<span class="computerScore">0</span></p>
+        </div>
+    </div>
+    <div class="choice">
+        <p class="weaponChoice">Choose your weapon:</p>
+        <div class="buttons">
+            <button class="playerPick" id="rock"><img src="images/rock.png" alt="Rock"></button>
+            <button class="playerPick" id="paper"><img src="images/paper.png" alt="Paper"></button>
+            <button class="playerPick" id="scissors"><img src="images/scissors.png" alt="Scissors"></button>
+        </div>
+    </div>
+    <div class="result">
+        <p class="winner"></p>
+        <button>Play again</button>
+    </div>
+    <footer>
+        <p> &copy Copyright Agata Deter 2023</p>
+    </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
