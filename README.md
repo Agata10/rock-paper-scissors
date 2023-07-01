@@ -18,8 +18,8 @@ It's my first game using JavaScript. Game is one of the task from [The Odin Proj
 * JavaScript
 
 ## Screenshots
-![Wepage](./img/screen.png)
-![Wepage When Won](./img/screenwon.png)
+![Wepage](./images/screen.png)
+![Wepage When Won](./images/screenwon.png)
 
 ## Link to game
 https://agata10.github.io/rock-paper-scissors/
