@@ -4,6 +4,7 @@
 * [General Info](#general-information)
 * [Technologies](#technologies)
 * [Screenshots](#screenshots)
+* [Link to game](#link-to-game)
 * [Setup](#setup)
 * [Usage](#usage)
 
@@ -17,10 +18,16 @@ It's my first game using JavaScript. Game is one of the task from [The Odin Proj
 * JavaScript
 
 ## Screenshots
+![Wepage](./img/screen.png)
+![Wepage When Won](./img/screenwon.png)
+
+## Link to game
+https://agata10.github.io/rock-paper-scissors/
 
 ## Setup
 
-1. Fork repository
+1. Fork repository 
+or
 2. Clone reposiory
    `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
