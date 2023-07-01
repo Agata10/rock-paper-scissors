@@ -54,12 +54,16 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
     let round = 0;
+    let computerSelection;
     const buttons = document.querySelectorAll('button.playerPick');
-
+   
     buttons.forEach(button => {
         button.addEventListener('click', function() {
 
-        score = playRound(`${button.id}`, getComputerChoice()); 
+        computerSelection = getComputerChoice();
+        score = playRound(`${button.id}`, computerSelection);
+        insertCompuerSelection(computerSelection);
+        insertPlayerSelection(`${button.id}`);
         round++;
         if(round == 5) {
             buttons.forEach(button => {button.disabled = true;});
@@ -68,6 +72,46 @@ function game() {
      })
     });
 
+}
+
+function insertPlayerSelection(playerSelection) {
+    playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
+    const playerDiv = document.getElementById('playerScore');
+    const playerImg = document.createElement('img');
+    playerDiv.textContent = " ";
+    playerImg.style.width = '80px';
+    playerImg.style.height = '80px';
+    
+    if(playerSelection === "Paper") {
+        playerImg.src = "images/paper.png";
+        playerDiv.appendChild(playerImg);
+    } else if(playerSelection === "Rock") {
+        playerImg.src = "images/rock.png";
+        playerDiv.appendChild(playerImg);
+    } else {
+        playerImg.src = "images/scissors.png";
+        playerDiv.appendChild(playerImg);
+    }
+
+}
+
+function insertCompuerSelection(computerSelection) {
+        const computerDiv = document.getElementById('computerScore');
+        const computerImg = document.createElement('img');
+        computerDiv.textContent = " ";
+        computerImg.style.width = '80px';
+        computerImg.style.height = '80px';
+
+        if(computerSelection === "Paper") {
+            computerImg.src = "images/paper.png";
+            computerDiv.appendChild(computerImg);
+        } else if(computerSelection === "Rock") {
+            computerImg.src = "images/rock.png";
+            computerDiv.appendChild(computerImg);
+        } else {
+            computerImg.src = "images/scissors.png";
+            computerDiv.appendChild(computerImg);
+        }
 }
 
 function gameOver(playerScore, computerScore) {
