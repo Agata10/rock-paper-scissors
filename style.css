@@ -24,10 +24,11 @@ header {
 h2.header {
     font-weight: 500;
     font-size: 48px;
-    border: 2px solid #a0816c;
+    border: 1px solid #f3f6f4;
     border-radius: 12px;
     background-color: #a0816c;
     padding: 24px;
+    box-shadow: 2px 2px 10px black;
 }
 
 h4.header {
@@ -79,6 +80,7 @@ footer {
     background-color: #a0816c;
     border-radius: 8px;
     padding-top: 8px;
+    box-shadow: 2px 2px 6px #000000;
 }
 
 span {
@@ -137,6 +139,8 @@ img{
     width: 100px;
     height: 100px;
     background-color: #e8ded1;
+    box-shadow: 2px 2px 10px #a0816c;
+
 }
 
 .result {
